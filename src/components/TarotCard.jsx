@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Badge, Button } from 'react-bootstrap';
 
 
+
 export function TarotCard({ data, setOrdered}) {
   return (
     <Card className = "h-100 shadow-sm bg-teal rounded">

@@ -2,15 +2,17 @@
 [{
   "id": 1,
   "name": "The Fool",
-  "image": "./img/Fool.jpg",
+  "image": "../images/Fool.jpg",
+  "imageback": "../images/CardBack.png",
   "desc": "The Fool strides bravely forward, unaware of the dangers that surround him. Yet is this blissful ignorance the key to something profound?"
 },
 {"id": 2,
   "name": "The Hanged Man",
-  "image": "./img/Hanged Man.jpg",
+  "image": "../images/Hanged Man.jpg",
+  "imageback": "../images/CardBack.png",
   "desc": "The Hanged Man tells of danger ahead. A wise traveler heeds this warning, too late for its messenger."},
 {"id": 3,
   "name": "The Star",
-  "image": "./img/CardBack.png",
-  "desc": "The Star signals a bitch better step up or they bout to get shot"}
-]
+  "image": "../images/Star.jpg",
+  "imageback": "../images/CardBack.png",
+  "desc": "The Star signals a bitch better step up or they bout to get shot"}]
