@@ -4,7 +4,9 @@ import './App.scss';
 import {Container, Row, Col } from 'react-bootstrap';
 import { TarotCard } from './components/TarotCard';
 import { Confirmation } from './components/Confirmation';
+import { TarotDeck } from './components/TarotDeck';
 import cards from './data';
+import deck from './deck';
 
 
 
@@ -27,7 +29,17 @@ function App() {
           <Col xs={3} className="mb-5" key={`$data.id`}>
             <TarotCard data={data} setOrdered={displayConfirmation} />
           </Col>
-        ) )}
+        ))}
+      </Row>
+      <Row>
+        <Col xs={3} className="mb-5" key={`$deck.id`}>
+          
+        </Col>
+        <Col>
+          <p><img src="./images/Cardback.png" alt=""></img></p>
+        </Col>
+        <Col>
+        </Col>
       </Row>
       </Container>
   );
