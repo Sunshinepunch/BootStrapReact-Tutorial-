@@ -14,20 +14,13 @@ import deck from './deck';
 function App() {
   const [ordered, setOrdered] = useState(false);
 
-  function displayConfirmation() {
-    setOrdered(true);
-
-    setTimeout(() => {
-      setOrdered(false);
-    }, 3000);
-  }
   return (
     <Container>
       {ordered && <Confirmation toggle = {setOrdered} />}
       <Row>
         {cards.map(data => (
           <Col xs={3} className="mb-5" key={`$data.id`}>
-            <TarotCard data={data} setOrdered={displayConfirmation} />
+            <TarotCard data={data}  />
           </Col>
         ))}
       </Row>

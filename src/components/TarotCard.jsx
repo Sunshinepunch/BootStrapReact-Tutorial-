@@ -3,7 +3,7 @@ import { Card, Badge, Button } from 'react-bootstrap';
 
 
 
-export function TarotCard({ data, setOrdered}) {
+export function TarotCard({ data }) {
   return (
     <Card className = "h-100 shadow-sm bg-teal rounded">
       <Card.Img variant="top" src={data.image} />
@@ -16,7 +16,6 @@ export function TarotCard({ data, setOrdered}) {
         </div>
         <Card.Text className="text-secondary">{data.desc}</Card.Text>
         <Button
-          onClick={() => setOrdered()} 
           className="mt-auto font-weight-bold"
           variant="success"
           block>
