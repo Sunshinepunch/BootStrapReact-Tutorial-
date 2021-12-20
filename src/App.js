@@ -5,8 +5,6 @@ import {Container, Row, Col, Button } from 'react-bootstrap';
 import { TarotCard } from './components/TarotCard';
 import cards from './data';
 import { DndProvider } from "react-dnd";
-import { HTML5Backend } from 'react-dnd-html5-backend';
-import DragDrop from "./components/DragDrop";
 
 
 const tarotDeck = [
@@ -45,11 +43,9 @@ function App() {
     setCards(shuffledCards)
   }
 return (
-  <DndProvider backend={HTML5Backend}>
-    <div className="App">
-      <DragDrop />
-    </div>
-    {/* <Container>
+  <DndProvider>  
+
+    <Container>
       <Row>
         {cards.map(data => (
           <Col xs={3} className="mb-5" key={`$data.id`}>
@@ -61,6 +57,7 @@ return (
         <Col xs={3} className="mb-5" key={`$deck.id`}>
         </Col>
         <Col>
+          <p><img src="./images/Cardback.png" alt=""></img></p>
           <Button className="mt-auto font-weight-bold"
           variant="success"
           block> Deal a new card </Button>
@@ -68,7 +65,7 @@ return (
         <Col>
         </Col>
       </Row>
-      </Container> */}
+      </Container>
       </DndProvider>
   );
 }
