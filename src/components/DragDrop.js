@@ -10,8 +10,6 @@ const deck =
   "image": <img src="./images/CardBack.png" width="200px" />
 }
 
-
-
 function DragDrop() {
   return (
     <>

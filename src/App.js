@@ -5,7 +5,7 @@ import {Container, Row, Col, Button } from 'react-bootstrap';
 import { TarotCard } from './components/TarotCard';
 import cards from './data';
 import { DndProvider } from "react-dnd";
-
+import DragDrop from './components/DragDrop';
 
 const tarotDeck = [
   { "src": "./images/Chariot.jpg" },
@@ -43,8 +43,7 @@ function App() {
     setCards(shuffledCards)
   }
 return (
-  <DndProvider>  
-
+  <DragDrop>
     <Container>
       <Row>
         {cards.map(data => (
@@ -66,7 +65,7 @@ return (
         </Col>
       </Row>
       </Container>
-      </DndProvider>
+    </DragDrop>
   );
 }
 
