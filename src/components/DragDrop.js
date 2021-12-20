@@ -1,5 +1,4 @@
 import React from 'react';
-import Picture from './Picture';
 import "../App.scss";
 import {Container, Row, Col, Button } from 'react-bootstrap';
 
@@ -16,11 +15,23 @@ const deck =
 function DragDrop() {
   return (
     <>
-    <div className="Deck">{deck.image}</div>
     <Container>
-    <div className="Spread"></div>
-    <div className="Spread2"></div>
-    <div className="Spread3"></div>
+      <Row>
+        <Col>
+          <div className="Spread"></div>
+        </Col>
+        <Col>
+          <div className="Spread2"></div>
+        </Col>
+        <Col>
+          <div className="Spread3"></div>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+        <div className="position-absolute bottom-0 end-0"> {deck.image} </div>
+        </Col>
+      </Row>
     </Container>
     </>
   )

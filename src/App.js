@@ -49,7 +49,7 @@ return (
     <div className="App">
       <DragDrop />
     </div>
-    <Container>
+    {/* <Container>
       <Row>
         {cards.map(data => (
           <Col xs={3} className="mb-5" key={`$data.id`}>
@@ -68,7 +68,7 @@ return (
         <Col>
         </Col>
       </Row>
-      </Container>
+      </Container> */}
       </DndProvider>
   );
 }
